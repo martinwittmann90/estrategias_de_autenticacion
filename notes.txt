@@ -1,0 +1,7 @@
+App ID: 351347
+
+Client ID: Iv1.140f453d3b14777f
+
+103c38b23ae3804155156c040c11c366030ea0a0
+
+http://localhost:8080/auth/github/callback

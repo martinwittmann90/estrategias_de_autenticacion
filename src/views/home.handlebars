@@ -1,0 +1,22 @@
+<nav>
+    <div class="dashboard-container">
+        <img src="https://i.ibb.co/nrNMjtT/logo.png" whidth="70" style="max-height: max-content;"/>
+        {{#if session}}
+        <p class="welcome-message">Bienvenido, {{session.firstName}}</p>
+        <h2 class="profile-title">Perfil</h2>
+        <div class="profile-details">
+            <div>
+                <p>Email: {{session.email}}</p>
+                <p>Nombre completo: {{session.firstName}} {{session.lastName}}</p>
+                <p>Rol: {{session.role}}</p>
+            </div>
+        </div>
+        <button id="logout-btn" type="submit" class="logout-btn">Logout</button>
+        {{else}}
+            <p class="guest-message">Bienvenido a la tienda</p>
+            <a href="/?login=true" class="sign-in-link button is-light">INICIAR SESIÓN</a>
+            <a href="/?register=true" class="register-link button is-primary">REGISTRO</a>
+        {{/if}}
+    </div>
+</nav>
+<script src="/js/profileController.js"></script>

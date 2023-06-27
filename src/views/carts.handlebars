@@ -1,0 +1,27 @@
+<h1 class="title__cartpage">CHECKOUT</h1>
+
+{{#if cart.length}}
+  <table class="table__cart">
+    <thead>
+      <tr>
+        <th>Titulo</th>
+        <th>Precio</th>
+        <th>Cantidad</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each cart}}
+        <tr>
+          <td>{{this.title}}</td>
+          <td>{{this.price}}</td>
+          <td>{{this.quantity}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{else}}
+  <p>No products in the cart</p>
+{{/if}}
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/cartController.js"></script>
