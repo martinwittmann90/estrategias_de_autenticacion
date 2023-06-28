@@ -3,6 +3,7 @@
         <h2>Bienvenido/a: {{session.email}}</h2>
         <button id="logout-btn" class="logout-btn">Logout</button>
     </div>
+    <button id="cartButton">Ver Carrito</button>
 {{else}}
     <p class="guest-message">Bienvenido a la tienda</p>
     <a href="/?login=true" class="sign-in-link button is-light">INICIAR SESIÓN</a>
@@ -49,3 +50,4 @@
 </section>
 
 <script src="/js/profileController.js"></script>
+<script src="/js/cartController.js"></script>

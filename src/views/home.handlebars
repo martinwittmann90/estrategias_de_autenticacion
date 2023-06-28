@@ -11,7 +11,8 @@
                 <p>Rol: {{session.role}}</p>
             </div>
         </div>
-        <button id="logout-btn" type="submit" class="logout-btn">Logout</button>
+        <button id="logout-btn" type="submit" class="button is-danger mt-3">Logout</button>
+        <button class="button is-danger mt-3" onclick="location.href='/products'">Ir a productos</button>
         {{else}}
             <p class="guest-message">Bienvenido a la tienda</p>
             <a href="/?login=true" class="sign-in-link button is-light">INICIAR SESIÓN</a>
